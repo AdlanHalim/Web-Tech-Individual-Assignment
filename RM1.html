@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RM1 Campaign Program</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="myscript.js"></script>
+</head>
+<body>
+   
+    <button id="scroll-up">Scroll Up</button>
+
+    <div class="center">
+    <div class="container">
+        <div class="header">
+            <img src="iiumlogo.png" alt="IIUM logo">
+            <h1>RM1 Campaign</h1>
+            <p>Let your contributions be perpetual for the pleasure of Allah swt</p>
+        </div>
+        <div class="content">
+        <div class="left">
+            <img src="rm1campaign.png" alt="RM1 campaign image">
+            <h2>About the campaign</h2>
+            <p>The RM1 Campaign is an initiative by the IIUM Endowment Fund to invite the staff and students of the International Islamic University Malaysia to contribute one ringgit for the sake of Allah swt. The contributions will be used to support various projects and activities that benefit the IIUM community and the society at large.</p>
+            <p>The RM1 Campaign is based on the Quranic verse:</p>
+            <q>The example of those who spend their wealth in the way of Allah is like a seed [of grain] which grows seven spikes; in each spike is a hundred grains. And Allah multiplies [His reward] for whom He wills. And Allah is all-Encompassing and Knowing. (Al-Baqarah:261)</q>
+            <h2>How to participate</h2>
+            <p>If you are a staff of the IIUM, you can participate in the RM1 Campaign by filling out the form below and submitting it to the IIUM Endowment Fund. You can choose to deduct a certain amount from your monthly salary for the general campaign or the kulliyyah-based campaign. The deduction will take effect from the month and year that you specify until further notice.</p>
+            <p>If you are a student of the IIUM, you can participate in the RM1 Campaign by visiting the IIUM Endowment Fund website and making a donation online. You can also visit the IIUM Endowment Fund office and make a cash donation.</p>
+        </div>
+        <div class="right">
+            <form id="rm1-form" onsubmit="return validateForm()">
+                <h2>Participation in RM1 Campaign - Monthly Salary Deduction</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="staff-no">Staff No.:</label>
+                <input type="text" id="staff-no" name="staff-no" required>
+                <label for="contact-no">Contact No.:</label>
+                <input type="text" id="contact-no" name="contact-no" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="amount">Amount to be deducted (RM):</label>
+                <input type="number" id="amount" name="amount" min="1" required>
+                <label >Campaign:</label>
+                <input type="radio" id="general" name="campaign" value="general" checked>
+                <label for="general">RM1 Campaign - General</label>
+                <input type="radio" id="kulliyyah" name="campaign" value="kulliyyah">
+                <label for="kulliyyah">RM1 Campaign - Kulliyyah Based</label>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        </div>
+        <div class="clear"></div>
+        </div>
+        <div class="footer">
+            <p>For more information, please contact:</p>
+            <p>IIUM Endowment Fund</p>
+            <p>Jalan Gombak, Kuala Lumpur, Malaysia</p>
+            <p><a href="mailto:iiumef@iium.edu.my">iiumef@iium.edu.my</a></p>
+            <p><a href="tel:+60361965555">+603-6196 5555</a></p>
+            <p><a href="https://www.iium.edu.my">www.iium.edu.my</a></p>
+        </div>
+    </div> 
+    
+    <button id="scroll-down">Scroll Down</button>  
+
+</body>
+</html>
